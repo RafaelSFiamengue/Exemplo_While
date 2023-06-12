@@ -1,4 +1,4 @@
-# Exemplo do while
+# Prototipo de função
 ## Versão: 1.0 
 ## Status do Projeto: ✔️ Concluído
 
@@ -35,7 +35,7 @@
 Insira os tópicos do README em links para facilitar a navegação do leitor
 
 ## Descrição do projeto
-É um exemplo do uso do while na linguagem C# para contar os números naturais que o usuário escolher.
+Pede dois valores para o usuario e imprime todas as formulas básicas matematicas com aqueles dois valores na linguagem C#
 
 ## Funcionalidades ⚙️
 ✔️ Funcionalidade 1
@@ -79,4 +79,4 @@ Rafael Fiamengue
 ## Licença
 The MIT License (MIT)
 
-## Copyright ©️ Ano - Exemplo While
+## Copyright ©️ Ano - Prototipo de função
