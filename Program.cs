@@ -1,4 +1,4 @@
-﻿//Biblioteca 
+//Biblioteca 
 using System;
 //Biblioteca
 using System.Globalization;
@@ -16,24 +16,24 @@ namespace Course
             //Variavel para os valores numericos
             double num1, num2;
             //Variavel para repetição
-            char yn;
+            char yn = 'y';
             //Valores dos resultados
             double soma, subt, multi, divi;
-            
+
             //Condicional para repetição do programa
             while (yn != 'n')
             {
                 //Pergunta para o usuário o operador que o usuario vai usar
                 Console.WriteLine("Entre com o operador +, -, *, /: ");
                 //Faz a leitura dos valor da operação
-                op = char.TryParse(Console.ReadLine(), CultureInfo.InvariantCulture);
-                //Pergunta os valores de numericos que o usuario vai usar
+                op = char.Parse(Console.ReadLine());
+                //Pergunta o primeiro valor
                 Console.WriteLine("Entre com o primeiro valor: ");
-                //Faz a leitura dos valores numericos
+                //Faz a leitura do primeiro valor
                 num1 = double.Parse(Console.ReadLine(), CultureInfo.InvariantCulture);
-                //
+                //Pergunta o valor do segundo numero
                 Console.WriteLine("Entre com o segundo valor: ");
-                //
+                //Faz a leitura do segundo valor
                 num2 = double.Parse(Console.ReadLine(), CultureInfo.InvariantCulture);
 
                 //Condicional para operadores
@@ -41,6 +41,7 @@ namespace Course
                 {
                     // Caso de soma
                     case '+':
+                        //Variavel para mostrar a soma
                         soma = num1 + num2;
                         //Imprime para o usuario o resultado da soma
                         Console.WriteLine(num1 + " + " + num2 + " = " + soma);
@@ -48,6 +49,7 @@ namespace Course
                         break;
                     // Caso de subtração
                     case '-':
+                        //Variavel para mostrar a subtração
                         subt = num1 - num2;
                         //Imprime para o usuario o resultado da subtração
                         Console.WriteLine(num1 + " - " + num2 + " = " + subt);
@@ -55,6 +57,7 @@ namespace Course
                         break;
                     //Caso para multiplicação
                     case '*':
+                        //Variavel para mostrar a multiplicação
                         multi = num1 * num2;
                         //Imprime para o usuario o resultado da multiplicação
                         Console.WriteLine(num1 + " * " + num2 + " = " + num1 * num2);
@@ -62,6 +65,7 @@ namespace Course
                         break;
                     //Caso para divisão
                     case '/':
+                        //Variavel para mostrar a divisão
                         divi = num1 / num2;
                         //Imprime para o usuario o resultado da divisão
                         Console.WriteLine(num1 + " / " + num2 + " = " + num1 / num2);
@@ -78,12 +82,12 @@ namespace Course
                 //Pergunta para o usuario se ele quer usar o programa novamente
                 Console.WriteLine("Deseja continuar? y ou n: ");
                 //Faz a leitura do valor inserido para ver se o programa vai parar ou não
-                yn = char.TryParse(Console.ReadLine());
+                yn = char.Parse(Console.ReadLine());
 
             }
-            
-            
-            
+
+
+
         }
     }
 }
